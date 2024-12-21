@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="username-container" class="username-container">
+        <h2>Enter your Username and Password</h2>
+        <form id="username-form">
+            <input id="username-input" type="text" placeholder="Your Username" autocomplete="off" required>
+            <input id="password-input" type="password" placeholder="Your Password" autocomplete="off" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="login-error" style="color: red; display: none;">Incorrect username or password. Please try again.</div>
+    </div>
+
+    <div class="chat-container" id="chat-container" style="display: none;">
+        <div id="chat-box"></div>
+        <form id="chat-form">
+            <input id="chat-input" type="text" placeholder="Type your message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
