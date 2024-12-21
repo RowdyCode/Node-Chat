@@ -32,4 +32,4 @@ This is a real-time chat application built with **Node.js**, **Socket.io**, and 
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RowdyCode/Node-Chat
